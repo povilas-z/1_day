@@ -33,7 +33,7 @@ export default function DrawerContent({ navigation }) {
                             <Paragraph style={[styles.paragraph, styles.caption]}>
                                 99
                             </Paragraph>
-                            <Caption style={styles.caption}>Connections</Caption>
+                            <Caption style={styles.caption}> Connections</Caption>
                         </View>
                     </View>
                 </View>
@@ -51,6 +51,14 @@ export default function DrawerContent({ navigation }) {
                     <TouchableRipple onPress= {() => {}}>
                         <View style={styles.preference}>
                             <Text>Notifications</Text>
+                            <View pointerEvents='none'>
+                                <Switch value={false} />
+                            </View>
+                        </View>
+                    </TouchableRipple>
+                    <TouchableRipple onPress= {() => {}}>
+                        <View style={styles.preference}>
+                            <Text>Dark Mode</Text>
                             <View pointerEvents='none'>
                                 <Switch value={false} />
                             </View>
@@ -102,12 +110,12 @@ const styles = StyleSheet.create({
         marginTop: 15,
     },
     preference: {
-        paddingVertical: 12,
+        paddingVertical: 8,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: 16,
         alignItems: 'center',
-        paddingLeft: 20,
+        marginHorizontal: 14,
+        paddingHorizontal: 14,
     },
 });
 
