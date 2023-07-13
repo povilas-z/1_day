@@ -44,8 +44,7 @@ export default function LoginScreen({ navigation }){
     return(
         <Background>
             <BackButton goBack={navigation.goBack} />
-            <Logo />
-            <Header>Welcome</Header>
+            <Header>Login</Header>
             <TextInput 
             value={email.value}
             error={email.error}

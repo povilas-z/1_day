@@ -9,15 +9,16 @@ export default function StartScreen({ navigation }){
     return(
         <Background>
             <Logo />
-            <Header>Login Template</Header>
+            <Header style={{fontSize: 30, fontWeight: 'bold', letterSpacing: -0.3, marginTop: 20,marginBottom:8,}}>Meet oneDay!</Header>
             <Paragraph> 
-                The easiest way to start with your amazing app.
+                oneDay is your personal assistant, helping you turn your abstract dreams into reality
             </Paragraph>
             <Button 
             onPress= {() => {
                 navigation.navigate('LoginScreen')
             }}
-            mode="outlined">
+            mode="outlined"
+            >
                 Login
             </Button>
             <Button 

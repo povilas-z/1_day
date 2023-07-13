@@ -81,7 +81,7 @@ function DrawerNavigator(){
     <Drawer.Navigator 
     drawerContent={DrawerContent}
     screenOptions={{
-      headerShown: false
+      headerShown: false,
     }}
     >
       <Drawer.Screen name="HomeScreen" component={BottomNavigator} />

@@ -46,32 +46,35 @@ export default function DrawerContent({ navigation }) {
                         label="Profile"
                         icon={({color}) => <ProfileIcon fill={color} />}
                     />
-                </Drawer.Section>
-                <Drawer.Section title="Preferences">
+                </Drawer.Section >
+                <Drawer.Section title="Preferences" showDivider={false}>
                     <TouchableRipple onPress= {() => {}}>
                         <View style={styles.preference}>
-                            <Text>Notifications</Text>
+                            <Text fontSize>Notifications</Text>
                             <View pointerEvents='none'>
                                 <Switch value={false} />
                             </View>
                         </View>
                     </TouchableRipple>
                     <TouchableRipple onPress= {() => {}}>
-                        <View style={styles.preference}>
+                        <View style={[styles.preference, { justifyContent: 'space-between' }]}>
                             <Text>Dark Mode</Text>
                             <View pointerEvents='none'>
                                 <Switch value={false} />
                             </View>
                         </View>
-                    </TouchableRipple>
+                    </TouchableRipple> 
                 </Drawer.Section>
-                <Button
-                onPress={() => {
-                logoutUser();
-                }}
-                mode="contained">
-                Logout
-                </Button>
+                <Drawer.Section showDivider={false} style={{marginTop: 300, paddingLeft: 28,  }}>
+                    <Button
+                    style={{width: '50%',}}
+                    onPress={() => {
+                    logoutUser();
+                    }}
+                    mode="contained">
+                    Logout
+                    </Button>
+                </Drawer.Section>
             </View>
         </DrawerContentScrollView>
     )
@@ -108,6 +111,7 @@ const styles = StyleSheet.create({
     },
     drawerSection: {
         marginTop: 15,
+        paddingBottom: -15,
     },
     preference: {
         paddingVertical: 8,

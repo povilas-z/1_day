@@ -5,13 +5,14 @@ export const theme = {
     colors: {
         ...DefaultTheme.colors,
         text: '#000000',
-        primary: '#000080',
+        primary: '#000000',
         tint: '#FFFFFF',
-        secondary: '#87CEEB',
-        border: '#98FF98',
-        error: '#FF6633',
-        success: '#FFA500',
+        secondary: '#000000',
+        border: '#8BD2EF',
+        error: '#EDB69A',
+        success: '#C49FEA',
         google: '#000080',
+        surface: '',
 
     },
 }
