@@ -82,6 +82,9 @@ function DrawerNavigator(){
     drawerContent={DrawerContent}
     screenOptions={{
       headerShown: false,
+      drawerStyle: {
+        backgroundColor: 'black',
+      }
     }}
     >
       <Drawer.Screen name="HomeScreen" component={BottomNavigator} />
