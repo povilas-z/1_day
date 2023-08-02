@@ -6,7 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { StartScreen, LoginScreen, RegisterScreen, ResetPasswordScreen, HomeScreen, AuthLoadingScreen, ProfileScreen, TaskScreen, SettingsScreen} from './src/screens';
+import { StartScreen, LoginScreen, RegisterScreen, ResetPasswordScreen, HomeScreen, AuthLoadingScreen, ProfileScreen, TaskScreen, SettingsScreen, GoalScreen} from './src/screens';
 import { firebaseConfig } from './src/core/config';
 import firebase from 'firebase/compat/app';
 import { HomeIcon, TaskIcon } from './assets/icons';
@@ -34,6 +34,7 @@ export default function App() {
           <Stack.Screen name = "LoginScreen" component={LoginScreen} />
           <Stack.Screen name = "RegisterScreen" component={RegisterScreen} />
           <Stack.Screen name = "ResetPasswordScreen" component={ResetPasswordScreen} />
+          <Stack.Screen name = "GoalScreen" component={GoalScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
@@ -83,7 +84,7 @@ function DrawerNavigator(){
     screenOptions={{
       headerShown: false,
       drawerStyle: {
-        backgroundColor: 'black',
+        backgroundColor: '#28292A',
       }
     }}
     >

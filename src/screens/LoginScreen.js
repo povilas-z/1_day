@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import  { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
-import Paragraph from '../components/Paragraph';
 import Button from '../components/Button';
 import Background from '../components/Background';
-import Logo from '../components/Logo';
 import Header from '../components/Header'
 import TextInput from '../components/TextInput';
 import { emailValidator } from '../helpers/emailValidator';
@@ -36,7 +34,7 @@ export default function LoginScreen({ navigation }){
         if (response.error){
             alert(response.error)
         } else {
-            navigation.replace('HomeScreen')
+            navigation.replace('AuthLoadingScreen')
         }
         setLoading(false)
     }
