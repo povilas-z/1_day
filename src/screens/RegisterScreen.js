@@ -37,7 +37,8 @@ export default function RegisterScreen({ navigation }){
         if (response.error) {
             alert(response.error);
         } else {
-            alert(response.user.displayName);
+            navigation.replace('AuthLoadingScreen')
+            console.log("User is register success")
         }
         setLoading(false)
     }
@@ -45,7 +46,6 @@ export default function RegisterScreen({ navigation }){
     return(
         <Background>
             <BackButton goBack={navigation.goBack} />
-            <Logo />
             <Header>Create Account</Header>
             <TextInput
             value={name.value}

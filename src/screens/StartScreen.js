@@ -9,9 +9,9 @@ export default function StartScreen({ navigation }){
     return(
         <Background>
             <Logo />
-            <Header style={{fontSize: 30, fontWeight: 'bold', letterSpacing: -0.3, marginTop: 20,marginBottom:8,}}>Meet oneDay!</Header>
+            <Header style={{fontSize: 30, fontWeight: 'bold', letterSpacing: -0.3, marginTop: 20,marginBottom:8,}}>Welcome to oneDay!</Header>
             <Paragraph> 
-                oneDay is your personal assistant, helping you turn your abstract dreams into reality
+                oneDay is your personal assistant, helping guide you to achieve your dreams
             </Paragraph>
             <Button 
             onPress= {() => {

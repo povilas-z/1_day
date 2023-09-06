@@ -47,14 +47,14 @@ if (loading) {
 }
 
 return (
-    <Svg height="80" width="80">
+    <Svg height="85" width="85">
       <Defs>
         <LinearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
           <Stop offset="0" stopColor={color1} stopOpacity="1" />
           <Stop offset="1" stopColor={color2} stopOpacity="1" />
         </LinearGradient>
       </Defs>
-      <Circle cx="40" cy="40" r="40" fill="url(#grad)" />
+      <Circle cx="42.5" cy="42.5" r="40" fill="url(#grad)" stroke='white' strokeWidth="2" />
     </Svg>
   );
 };

@@ -88,7 +88,7 @@ function DrawerNavigator(){
       }
     }}
     >
-      <Drawer.Screen name="HomeScreen" component={BottomNavigator} />
+      <Drawer.Screen name="HomeDrawer" component={BottomNavigator} />
       <Drawer.Screen name = "ProfileScreen" component={ProfileScreen} />
       <Drawer.Screen name = "SettingsScreen" component={SettingsScreen} />
     </Drawer.Navigator>

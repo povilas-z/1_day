@@ -12,7 +12,7 @@ export const theme = {
         error: '#EDB69A',
         success: '#C49FEA',
         google: '#000080',
-        surface: '',
+        surface: '#FFFFFF',
 
     },
 }

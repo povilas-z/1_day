@@ -7,7 +7,7 @@ export { default as AuthLoadingScreen } from './AuthLoadingScreen';
 export { default as ProfileScreen } from './ProfileScreen';
 export { default as TaskScreen } from './TaskScreen';
 export { default as SettingsScreen } from './SettingsScreen';
-
+export { default as GoalScreen } from './GoalScreen';
 
 
 
